@@ -98,8 +98,10 @@ elif tool == "rev":
     print("1 = Number\n2 = String")
     revCheck = int(input("Select Option: "))
     if revCheck == 1:
-        rev = int(input("Enter the number to reverse : "))
-        rArr = [1, 2, 3, 4, 5, 6, 7, 8]
-        temp = rArr[0]
-        rArr[0] = rArr[-1]
-        rArr[-1] = temp
+        rArr = []
+        for i in range(0, 5) :
+            rev = int(input("Enter the number to reverse : "))
+            rArr.append(rev)
+            print(rArr)
+        arrRev = list(reversed(rArr))
+        print(arrRev)
